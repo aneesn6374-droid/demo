@@ -17,27 +17,78 @@
       height: 100vh;
       margin: 0;
     }
+
     .container {
-      background-color: rgba(255,255,255,0.95);
+      background-color: rgba(255, 255, 255, 0.95);
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       width: 400px;
       text-align: center;
     }
-    h2 { color:#1a73e8; font-weight:700; margin-bottom:10px; }
-    p { color:#333; font-size:15px; margin-bottom:20px; }
-    /* Style injected elements */
-    .attrEntry ul { list-style:none !important; padding:0 !important; margin:0 !important; }
-    .attrEntry li { margin-bottom:10px !important; }
-    a[href*="whatIsThis"] { display:none !important; }
-    .buttons { display:flex !important; justify-content:center !important; gap:15px !important; margin-top:15px !important; }
-    input[type="submit"], input[type="button"] {
-      background-color:#1a73e8 !important; color:white !important; border:none !important;
-      padding:10px 20px !important; border-radius:4px !important; cursor:pointer !important;
-      font-size:15px !important;
+
+    h2 {
+      color: #1a73e8;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
-    input[type="submit"]:hover, input[type="button"]:hover { background-color:#155ab6 !important; }
+
+    p {
+      color: #333;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    #api {
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    /* Remove bullet and align radio buttons vertically */
+    .attrEntry ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .attrEntry li {
+      margin-bottom: 10px !important;
+    }
+
+    .attrEntry label {
+      display: inline-block !important;
+      margin-left: 5px !important;
+      font-size: 15px !important;
+    }
+
+    /* Hide "What is this?" link */
+    a[href*="whatIsThis"] {
+      display: none !important;
+    }
+
+    /* Style default buttons */
+    .buttons {
+      display: flex !important;
+      justify-content: center !important;
+      gap: 15px !important;
+      margin-top: 15px !important;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+      background-color: #1a73e8 !important;
+      color: white !important;
+      border: none !important;
+      padding: 10px 20px !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      font-size: 15px !important;
+    }
+
+    input[type="submit"]:hover,
+    input[type="button"]:hover {
+      background-color: #155ab6 !important;
+    }
   </style>
 </head>
 <body>
