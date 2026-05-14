@@ -1,93 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Sign in to your account</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      width: 400px;
-      text-align: center;
-    }
-
-    h2 {
-      color: #1a73e8;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #333;
-      font-size: 15px;
-      margin-bottom: 20px;
-    }
-
-    #api {
-      margin-top: 10px;
-      text-align: left;
-    }
-
-    /* Remove bullet and align radio buttons vertically */
-    .attrEntry ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .attrEntry li {
-      margin-bottom: 10px;
-    }
-
-    .attrEntry label {
-      display: inline-block;
-      margin-left: 5px;
-      font-size: 15px;
-    }
-
-    /* Hide "What is this?" link */
-    a[href*="whatIsThis"] {
-      display: none !important;
-    }
-
-    /* Button styling and spacing */
-    button {
-      background-color: #1a73e8;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 15px;
-      margin: 10px 10px 0 10px; /* adds space between buttons */
-    }
-
-    button:hover {
-      background-color: #155ab6;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <title>Find Your Account</title>
+ 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+ 
+        .main-container {
+            width: 400px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+ 
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+ 
+        .radio-container {
+            margin-bottom: 20px;
+        }
+ 
+        .radio-container label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #444;
+            cursor: pointer;
+        }
+ 
+        .radio-container input[type="radio"] {
+            margin-right: 10px;
+        }
+ 
+        #api {
+            margin-top: 20px;
+        }
+ 
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #0078d4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+ 
+        button:hover {
+            background: #005ea6;
+        }
+    </style>
 </head>
+ 
 <body>
-  <div class="container">
-    <h2>Sign in to your account</h2>
-    <p>Please choose how you’d like to continue.</p>
-    <p>Please provide the following details.</p>
-
-    <!-- B2C injects the form here -->
+ 
+<div class="main-container">
+ 
+    <h2>Find Your Account</h2>
+ 
+    <!-- Azure AD B2C injects controls here -->
     <div id="api"></div>
-  </div>
+ 
+</div>
+ 
 </body>
 </html>
