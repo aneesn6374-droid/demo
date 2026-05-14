@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sign in to your account</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" data-preload="true" />
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
-      background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+      background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80")
+                  no-repeat center center fixed;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -14,76 +17,27 @@
       height: 100vh;
       margin: 0;
     }
-
     .container {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(255,255,255,0.95);
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       width: 400px;
       text-align: center;
     }
-
-    h2 {
-      color: #1a73e8;
-      font-weight: 700;
-      margin-bottom: 10px;
+    h2 { color:#1a73e8; font-weight:700; margin-bottom:10px; }
+    p { color:#333; font-size:15px; margin-bottom:20px; }
+    /* Style injected elements */
+    .attrEntry ul { list-style:none !important; padding:0 !important; margin:0 !important; }
+    .attrEntry li { margin-bottom:10px !important; }
+    a[href*="whatIsThis"] { display:none !important; }
+    .buttons { display:flex !important; justify-content:center !important; gap:15px !important; margin-top:15px !important; }
+    input[type="submit"], input[type="button"] {
+      background-color:#1a73e8 !important; color:white !important; border:none !important;
+      padding:10px 20px !important; border-radius:4px !important; cursor:pointer !important;
+      font-size:15px !important;
     }
-
-    p {
-      color: #333;
-      font-size: 15px;
-      margin-bottom: 20px;
-    }
-
-    #api {
-      margin-top: 10px;
-      text-align: left;
-    }
-
-    /* Remove bullet and align radio buttons vertically */
-    .attrEntry ul {
-      list-style: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-
-    .attrEntry li {
-      margin-bottom: 10px !important;
-    }
-
-    .attrEntry label {
-      display: inline-block !important;
-      margin-left: 5px !important;
-      font-size: 15px !important;
-    }
-
-    /* Hide "What is this?" link */
-    a[href*="whatIsThis"] {
-      display: none !important;
-    }
-
-    /* Button styling and spacing */
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px; /* space between buttons */
-      margin-top: 15px;
-    }
-
-    button {
-      background-color: #1a73e8 !important;
-      color: white !important;
-      border: none !important;
-      padding: 10px 20px !important;
-      border-radius: 4px !important;
-      cursor: pointer !important;
-      font-size: 15px !important;
-    }
-
-    button:hover {
-      background-color: #155ab6 !important;
-    }
+    input[type="submit"]:hover, input[type="button"]:hover { background-color:#155ab6 !important; }
   </style>
 </head>
 <body>
@@ -91,15 +45,7 @@
     <h2>Sign in to your account</h2>
     <p>Please choose how you’d like to continue.</p>
     <p>Please provide the following details.</p>
-
-    <!-- B2C injects the form here -->
     <div id="api"></div>
-
-    <!-- Button container -->
-    <div class="buttons">
-      <button id="continue">Continue</button>
-      <button id="cancel">Cancel</button>
-    </div>
   </div>
 </body>
 </html>
