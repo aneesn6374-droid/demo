@@ -41,15 +41,20 @@
       text-align: left;
     }
 
-    /* Force radio buttons to stack vertically */
-    .attrEntry input[type="radio"] {
-      display: inline-block;
-      margin-right: 8px;
+    /* Remove bullet and align radio buttons vertically */
+    .attrEntry ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .attrEntry li {
+      margin-bottom: 10px;
     }
 
     .attrEntry label {
-      display: block;
-      margin-bottom: 10px;
+      display: inline-block;
+      margin-left: 5px;
       font-size: 15px;
     }
 
@@ -58,6 +63,7 @@
       display: none !important;
     }
 
+    /* Button styling and spacing */
     button {
       background-color: #1a73e8;
       color: white;
@@ -66,7 +72,7 @@
       border-radius: 4px;
       cursor: pointer;
       font-size: 15px;
-      margin-top: 10px;
+      margin: 10px 8px 0 8px; /* adds space between buttons */
     }
 
     button:hover {
